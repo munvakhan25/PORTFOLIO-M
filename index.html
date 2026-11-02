@@ -1,0 +1,791 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#e6ecf4" />
+  <meta name="description" content="Pathan Munva Khan — Data Science & AI Engineer portfolio. Projects, skills, experience and resume." />
+  <title>Pathan Munva Khan | Data &amp; AI Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-theme="light">
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="PMK home">PMK<span>.</span></a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a class="active" href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#work">Projects</a>
+      <a href="#capabilities">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#certifications">Certificates</a>
+      <button type="button" class="nav-resume" data-open-resume>Resume</button>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="social-nav">
+      <button type="button" class="theme-toggle" aria-label="Switch to dark theme" aria-pressed="false" title="Switch to dark theme">
+        <svg class="theme-icon theme-icon--sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg>
+        <svg class="theme-icon theme-icon--moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.2 15.1A8.5 8.5 0 0 1 8.9 3.8 8.5 8.5 0 1 0 20.2 15.1Z"/></svg>
+      </button>
+      <a href="https://github.com/munvakhan25" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .9a11.1 11.1 0 0 0-3.51 21.63c.55.1.76-.24.76-.53v-2.07c-3.1.67-3.76-1.32-3.76-1.32-.5-1.28-1.24-1.62-1.24-1.62-1.01-.69.08-.68.08-.68 1.12.08 1.71 1.15 1.71 1.15 1 1.7 2.62 1.21 3.26.92.1-.72.39-1.21.71-1.49-2.48-.28-5.09-1.24-5.09-5.52 0-1.22.44-2.22 1.15-3-.12-.28-.5-1.42.11-2.96 0 0 .94-.3 3.05 1.15a10.6 10.6 0 0 1 5.55 0c2.11-1.45 3.04-1.15 3.04-1.15.61 1.54.23 2.68.12 2.96.71.78 1.14 1.78 1.14 3.01 0 4.29-2.61 5.23-5.1 5.5.4.35.76 1.03.76 2.08V22c0 .29.2.64.77.53A11.1 11.1 0 0 0 12 .9Z"/></svg>
+      </a>
+      <a href="https://www.linkedin.com/in/munvakhan/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+      </a>
+      <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=munvakhan25%40gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Email Munva on Gmail" title="Email on Gmail">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 5.5h17a1.5 1.5 0 0 1 1.5 1.5v10a1.5 1.5 0 0 1-1.5 1.5h-17A1.5 1.5 0 0 1 2 17V7a1.5 1.5 0 0 1 1.5-1.5Zm.1 2.2 7.8 5.7a1 1 0 0 0 1.2 0l7.8-5.7V7.5h-17v.2Zm16.4 9.3V10l-6.2 4.5a3 3 0 0 1-3.6 0L4 10v7h16Z"/></svg>
+      </a>
+    </div>
+    <button type="button" class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+  </header>
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-sequence" aria-hidden="true">
+        <canvas id="hero-sequence-canvas"></canvas>
+        <div class="sequence-readout"><i></i><span id="sequence-label">01 / RAW SIGNAL</span></div>
+      </div>
+      <button class="sequence-skip" type="button" aria-label="Skip intro animation">SKIP INTRO <span>↗</span></button>
+      <div class="hero-availability"><i></i> AVAILABLE FOR OPPORTUNITIES</div>
+      <div class="hero-copy">
+        <p class="eyebrow">DATA SCIENCE&nbsp; / &nbsp;AI&nbsp; / &nbsp;ANALYTICS</p>
+        <h1>PATHAN<br>MUNVA KHAN</h1>
+        <p class="role">Data &amp; AI Engineer</p>
+        <p class="intro">Building intelligent, data-driven solutions<br class="desktop-only"> at the intersection of AI and real-world impact.</p>
+        <a class="explore-btn" href="#work">Explore work <span>↗</span></a>
+      </div>
+      <div class="hero-proof" aria-label="Education and academic details">
+        <span><b>9.35</b><small>CGPA / 10</small></span>
+        <i></i>
+        <span><b>B.Tech</b><small>AI &amp; DATA SCIENCE</small></span>
+        <i></i>
+        <span><b>2028</b><small>GRADUATION</small></span>
+      </div>
+      <aside class="quick-panel glass-card" aria-label="Quick navigation">
+        <button type="button" data-scroll="work"><span class="panel-icon">⌘</span><span><b>Projects</b><small>Selected work &amp; experiments</small></span><em>↗</em></button>
+        <button type="button" data-scroll="capabilities"><span class="panel-icon">◇</span><span><b>Capabilities</b><small>Tools &amp; technologies</small></span><em>↗</em></button>
+        <button type="button" data-scroll="certifications"><span class="panel-icon">✳</span><span><b>Certifications</b><small>Courses &amp; recognition</small></span><em>↗</em></button>
+        <button type="button" data-open-resume><span class="panel-icon">▤</span><span><b>Resume</b><small>View professional profile</small></span><em>↗</em></button>
+        <button type="button" data-scroll="contact"><span class="panel-icon">↗</span><span><b>Connect</b><small>LinkedIn, GitHub &amp; email</small></span><em>↗</em></button>
+      </aside>
+      <div class="hero-index"><span class="index-dot"></span> 01 <i>/</i> 06</div>
+      <a class="scroll-cue" href="#work">SCROLL TO EXPLORE <span>↓</span></a>
+      <div class="coordinates">NELLORE, INDIA&nbsp; · &nbsp;17°N 80°E</div>
+    </section>
+
+    <section class="section intro-section" id="about">
+      <div class="section-kicker">01 / PROFILE</div>
+      <div class="intro-grid">
+        <h2>Curiosity,<br><em>translated</em><br>into systems.</h2>
+        <div class="intro-body">
+          <p class="lead">I’m a third-year B.Tech student in Artificial Intelligence and Data Science, interested in using data and intelligent systems to solve practical problems.</p>
+          <p>My work spans Python development, data analytics, machine learning projects, and web-based applications. I enjoy moving from an idea to a working implementation, documenting the process and improving through experimentation.</p>
+          <div class="profile-meta">
+            <span>BASED IN <b>NELLORE, INDIA</b></span>
+            <span>GRADUATION <b>2028</b></span>
+            <span>CGPA <b>9.35 / 10.0</b></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section work-section" id="work">
+      <div class="section-heading">
+        <div>
+          <div class="section-kicker">02 / SELECTED WORK</div>
+          <h2>Projects &amp; experiments<span class="blue-dot">.</span></h2>
+        </div>
+        <span class="section-note">Project previews, real features<br>and clearly sourced results.</span>
+      </div>
+      <div class="project-grid">
+        <article class="project-card project-featured">
+          <div class="project-art library-art">
+            <svg class="project-illustration" viewBox="0 0 720 360" role="img" aria-label="Dark library demand forecasting dashboard with a rising test benchmark chart and weekly demand bars">
+              <defs>
+                <linearGradient id="library-bg" x1="0" y1="0" x2="1" y2="1">
+                  <stop stop-color="#142d3c"/>
+                  <stop offset="1" stop-color="#09141f"/>
+                </linearGradient>
+                <linearGradient id="library-line" x1="0" y1="0" x2="1" y2="0">
+                  <stop stop-color="#76e3ca"/>
+                  <stop offset="1" stop-color="#b5f27a"/>
+                </linearGradient>
+                <linearGradient id="library-bars" x1="0" y1="0" x2="0" y2="1">
+                  <stop stop-color="#78dfc3"/>
+                  <stop offset="1" stop-color="#377f78" stop-opacity=".2"/>
+                </linearGradient>
+                <filter id="library-glow" x="-30%" y="-50%" width="160%" height="200%">
+                  <feGaussianBlur stdDeviation="5" result="blur"/>
+                  <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+                </filter>
+              </defs>
+              <rect width="720" height="360" fill="url(#library-bg)"/>
+              <path d="M0 72H720M0 144H720M0 216H720M0 288H720M144 0V360M288 0V360M432 0V360M576 0V360" stroke="#b6e5df" stroke-opacity=".055"/>
+              <circle cx="602" cy="72" r="155" fill="#58d8bd" opacity=".055"/>
+              <rect x="44" y="34" width="632" height="292" rx="14" fill="#101f2a" stroke="#52736f" stroke-opacity=".6"/>
+              <path d="M44 83H676" stroke="#52736f" stroke-opacity=".45"/>
+              <circle cx="67" cy="59" r="4" fill="#f1a18f"/>
+              <circle cx="82" cy="59" r="4" fill="#e8cb7c"/>
+              <circle cx="97" cy="59" r="4" fill="#77d9b8"/>
+              <text x="121" y="64" fill="#b9ceca" font-size="10" font-family="Arial, sans-serif" letter-spacing="2">LIBRARY / DEMAND INTELLIGENCE</text>
+              <text x="68" y="115" fill="#f3f5ec" font-size="17" font-family="Arial, sans-serif" font-weight="600">Circulation forecast</text>
+              <text x="68" y="134" fill="#809994" font-size="10" font-family="Arial, sans-serif">PREDICTED BORROWING · NEXT 30 DAYS</text>
+              <rect x="500" y="99" width="145" height="54" rx="8" fill="#172c35" stroke="#34554f"/>
+              <text x="515" y="120" fill="#8ca7a1" font-size="9" font-family="Arial, sans-serif" letter-spacing="1">MODEL ACCURACY</text>
+              <text x="515" y="141" fill="#aaf0cf" font-size="18" font-family="Arial, sans-serif" font-weight="700">94.2%</text>
+              <rect x="68" y="159" width="400" height="134" rx="8" fill="#0c1922" stroke="#2b4546"/>
+              <path d="M87 185H449M87 218H449M87 251H449M87 276H449" stroke="#afc7c1" stroke-opacity=".09"/>
+              <path d="M91 263L133 245L174 254L215 215L256 226L297 191L338 206L379 177L420 187L450 163V278H91Z" fill="#69d9b9" opacity=".09"/>
+              <path d="M91 263L133 245L174 254L215 215L256 226L297 191L338 206L379 177L420 187L450 163" fill="none" stroke="url(#library-line)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" filter="url(#library-glow)"/>
+              <circle cx="450" cy="163" r="5" fill="#c6f391" stroke="#10221f" stroke-width="2"/>
+              <text x="88" y="309" fill="#718985" font-size="8" font-family="Arial, sans-serif">WEEK 01</text>
+              <text x="217" y="309" fill="#718985" font-size="8" font-family="Arial, sans-serif">WEEK 02</text>
+              <text x="348" y="309" fill="#718985" font-size="8" font-family="Arial, sans-serif">WEEK 03</text>
+              <rect x="489" y="168" width="156" height="125" rx="8" fill="#0c1922" stroke="#2b4546"/>
+              <text x="505" y="188" fill="#8ca7a1" font-size="9" font-family="Arial, sans-serif" letter-spacing="1">WEEKLY DEMAND</text>
+              <path d="M507 268H627" stroke="#afc7c1" stroke-opacity=".15"/>
+              <rect x="512" y="239" width="12" height="29" rx="3" fill="url(#library-bars)"/>
+              <rect x="532" y="224" width="12" height="44" rx="3" fill="url(#library-bars)"/>
+              <rect x="552" y="231" width="12" height="37" rx="3" fill="url(#library-bars)"/>
+              <rect x="572" y="210" width="12" height="58" rx="3" fill="url(#library-bars)"/>
+              <rect x="592" y="216" width="12" height="52" rx="3" fill="url(#library-bars)"/>
+              <rect x="612" y="198" width="12" height="70" rx="3" fill="url(#library-bars)"/>
+              <text x="508" y="283" fill="#718985" font-size="8" font-family="Arial, sans-serif">M</text>
+              <text x="529" y="283" fill="#718985" font-size="8" font-family="Arial, sans-serif">T</text>
+              <text x="549" y="283" fill="#718985" font-size="8" font-family="Arial, sans-serif">W</text>
+              <text x="569" y="283" fill="#718985" font-size="8" font-family="Arial, sans-serif">T</text>
+              <text x="589" y="283" fill="#718985" font-size="8" font-family="Arial, sans-serif">F</text>
+              <text x="609" y="283" fill="#718985" font-size="8" font-family="Arial, sans-serif">S</text>
+            </svg>
+            <img class="project-screenshot" src="assets/projects/smart-library-demand-predictor.png" alt="Screenshot of the Smart Library dashboard running with a synthetic benchmark and demand charts" loading="lazy" decoding="async">
+            <span class="art-label">LIVE UI · SYNTHETIC BENCHMARK / 01</span>
+          </div>
+          <div class="project-info">
+            <div>
+              <span class="project-type">DATA SCIENCE · MACHINE LEARNING</span>
+              <h3><a href="https://github.com/munvakhan25/smart-library-demand-predictor" target="_blank" rel="noopener noreferrer">Smart Library<br>Book Demand Predictor <span>↗</span></a></h3>
+            </div>
+            <p>Ranks book-demand risk and suggests stock actions using circulation features, Python, Scikit-Learn, and Pandas.</p>
+            <div class="project-highlights" aria-label="Benchmark results on generated data">
+              <span><strong>94.2%</strong><small>TEST ACCURACY</small></span>
+              <span><strong>87.7%</strong><small>TEST RECALL</small></span>
+              <span><strong>10,000</strong><small>SYNTHETIC ROWS</small></span>
+            </div>
+            <p class="project-highlight-note">Random Forest · held-out synthetic test set · not a live-library result</p>
+            <details class="project-details">
+              <summary>EXPLORE THE CASE STUDY <span>+</span></summary>
+              <div class="project-case-grid">
+                <section>
+                  <h4>THE PROBLEM</h4>
+                  <p>Libraries need to spot likely stockouts without tying up budget and shelf space in slow-moving titles.</p>
+                </section>
+                <section>
+                  <h4>THE APPROACH</h4>
+                  <p>Generated 10,000 synthetic circulation records, engineered hold-to-copy, turnover, demand-pressure, and inactivity features, then benchmarked Logistic Regression, Gradient Boosting, and Random Forest.</p>
+                </section>
+                <section>
+                  <h4>BENCHMARK RESULTS</h4>
+                  <p>Random Forest scored <strong>94.20% accuracy</strong>, <strong>95.13% precision</strong>, <strong>87.70% recall</strong>, and <strong>0.9419 ROC-AUC</strong> on 2,000 held-out records. It also recommends purchase, replenishment, optimal-stock, or weeding actions.</p>
+                </section>
+                <p class="project-caveat"><strong>Evaluation note:</strong> The benchmark uses synthetic data; these results are not a real-library pilot or a guarantee of production performance.</p>
+              </div>
+            </details>
+            <div class="project-actions">
+              <a href="https://smart-library-demand-predictor.onrender.com" target="_blank" rel="noopener noreferrer">OPEN LIVE APP <span>↗</span></a>
+              <a href="https://github.com/munvakhan25/smart-library-demand-predictor" target="_blank" rel="noopener noreferrer">SOURCE ON GITHUB <span>↗</span></a>
+            </div>
+            <div class="project-footer">
+              <span class="project-tags">Python · Scikit-Learn · Pandas · Random Forest</span>
+              <span class="project-number">01</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-art portfolio-art">
+            <svg class="project-illustration" viewBox="0 0 560 360" role="img" aria-label="Portfolio website preview with a Data and AI Engineer introduction, project navigation, and a glowing network visualization">
+              <defs>
+                <linearGradient id="portfolio-bg" x1="0" y1="0" x2="1" y2="1">
+                  <stop stop-color="#183849"/>
+                  <stop offset="1" stop-color="#0b1722"/>
+                </linearGradient>
+                <radialGradient id="portfolio-orb">
+                  <stop stop-color="#d7f6ce"/>
+                  <stop offset=".35" stop-color="#74d9bd"/>
+                  <stop offset="1" stop-color="#4c87a1" stop-opacity=".1"/>
+                </radialGradient>
+                <filter id="portfolio-glow" x="-80%" y="-80%" width="260%" height="260%">
+                  <feGaussianBlur stdDeviation="10" result="blur"/>
+                  <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+                </filter>
+              </defs>
+              <rect width="560" height="360" fill="url(#portfolio-bg)"/>
+              <circle cx="447" cy="126" r="115" fill="#7be2c8" opacity=".06"/>
+              <path d="M0 288H560M0 322H560" stroke="#8fd5c4" stroke-opacity=".08"/>
+              <rect x="38" y="38" width="484" height="270" rx="12" fill="#101d26" stroke="#66827f" stroke-opacity=".72"/>
+              <path d="M38 76H522" stroke="#66827f" stroke-opacity=".5"/>
+              <circle cx="58" cy="57" r="4" fill="#f1a18f"/>
+              <circle cx="73" cy="57" r="4" fill="#e8cb7c"/>
+              <circle cx="88" cy="57" r="4" fill="#77d9b8"/>
+              <rect x="106" y="51" width="165" height="12" rx="6" fill="#ffffff" opacity=".06"/>
+              <text x="58" y="102" fill="#9adcc7" font-size="8" font-family="Arial, sans-serif" letter-spacing="2">PATHAN MUNVA KHAN</text>
+              <text x="58" y="143" fill="#f5f4eb" font-size="25" font-family="Arial, sans-serif" font-weight="700">Data, made</text>
+              <text x="58" y="173" fill="#f5f4eb" font-size="25" font-family="Arial, sans-serif" font-weight="700">intelligent.</text>
+              <rect x="60" y="190" width="163" height="4" rx="2" fill="#b6d2c9" opacity=".55"/>
+              <rect x="60" y="201" width="137" height="4" rx="2" fill="#b6d2c9" opacity=".25"/>
+              <rect x="60" y="226" width="96" height="25" rx="12" fill="#b5efca"/>
+              <text x="76" y="242" fill="#17342e" font-size="8" font-family="Arial, sans-serif" font-weight="700">EXPLORE PROJECTS ↗</text>
+              <circle cx="394" cy="165" r="72" fill="none" stroke="#82ddc6" stroke-opacity=".22"/>
+              <circle cx="394" cy="165" r="52" fill="none" stroke="#82ddc6" stroke-opacity=".3" stroke-dasharray="2 7"/>
+              <circle cx="394" cy="165" r="32" fill="url(#portfolio-orb)" filter="url(#portfolio-glow)"/>
+              <path d="M337 144L361 125L394 133L425 111L449 132M347 189L372 175L394 197L426 177L444 194" fill="none" stroke="#9cebd0" stroke-opacity=".65" stroke-width="1"/>
+              <g fill="#c6f3b2">
+                <circle cx="337" cy="144" r="3"/><circle cx="361" cy="125" r="3"/><circle cx="394" cy="133" r="3"/>
+                <circle cx="425" cy="111" r="3"/><circle cx="449" cy="132" r="3"/><circle cx="347" cy="189" r="3"/>
+                <circle cx="372" cy="175" r="3"/><circle cx="394" cy="197" r="3"/><circle cx="426" cy="177" r="3"/><circle cx="444" cy="194" r="3"/>
+              </g>
+              <rect x="334" y="263" width="118" height="20" rx="10" fill="#182a31" stroke="#426960"/>
+              <circle cx="348" cy="273" r="3" fill="#a4ebc5"/>
+              <text x="358" y="276" fill="#b2c9bd" font-size="8" font-family="Arial, sans-serif" letter-spacing="1">AI · DATA · ENGINEERING</text>
+            </svg>
+            <img class="project-screenshot" src="assets/projects/3d-personal-portfolio.png" alt="Screenshot of the live 3D personal portfolio homepage" loading="lazy" decoding="async">
+            <span class="art-label">LIVE PORTFOLIO / 02</span>
+          </div>
+          <div class="project-info">
+            <div>
+              <span class="project-type">WEB EXPERIENCE · 3D</span>
+              <h3><a href="https://3d-portfolio-pi-sand.vercel.app" target="_blank" rel="noopener noreferrer">3D Personal<br>Portfolio <span>↗</span></a></h3>
+            </div>
+            <p>An interactive 3D portfolio that brings projects, skills, experience, and background into one responsive web experience.</p>
+            <div class="project-highlights" aria-label="Portfolio deliverables">
+              <span><strong>3D</strong><small>INTERACTIVE VISUALS</small></span>
+              <span><strong>MOBILE</strong><small>RESPONSIVE DESIGN</small></span>
+              <span><strong>PROJECTS</strong><small>PORTFOLIO SHOWCASE</small></span>
+            </div>
+            <details class="project-details">
+              <summary>EXPLORE THE CASE STUDY <span>+</span></summary>
+              <div class="project-case-grid">
+                <section>
+                  <h4>THE CHALLENGE</h4>
+                  <p>Create a personal portfolio that feels more immersive than a conventional template while keeping projects, skills, and background easy to explore.</p>
+                </section>
+                <section>
+                  <h4>THE EXPERIENCE</h4>
+                  <p>A clean, white neumorphic interface pairs soft blue accents and subtle motion with a futuristic 3D centerpiece, layered surfaces, and a clear visual hierarchy.</p>
+                </section>
+                <section>
+                  <h4>THE CONTENT</h4>
+                  <p>Brings together an introduction, skills, experience, selected projects, education, certifications, and contact details in one digital portfolio.</p>
+                </section>
+                <section class="project-case-wide">
+                  <h4>IMPLEMENTATION</h4>
+                  <p>Built with HTML5, CSS3, JavaScript, CSS 3D transforms, and responsive web design—without a heavy frontend framework.</p>
+                </section>
+              </div>
+            </details>
+            <div class="project-actions">
+              <a href="https://3d-portfolio-pi-sand.vercel.app" target="_blank" rel="noopener noreferrer">OPEN LIVE APP <span>↗</span></a>
+              <a href="https://github.com/munvakhan25/munvakhan25.github.io/tree/main" target="_blank" rel="noopener noreferrer">SOURCE ON GITHUB <span>↗</span></a>
+            </div>
+            <div class="project-footer">
+              <span class="project-tags">JavaScript · Three.js · CSS Glassmorphism</span>
+              <span class="project-number">02</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-art airsight-art">
+            <svg class="project-illustration" viewBox="0 0 560 360" role="img" aria-label="AirSight air-quality dashboard preview with sample-data label, pollutant cards, filters, and a baseline forecast chart">
+              <defs>
+                <linearGradient id="airsight-bg" x1="0" y1="0" x2="1" y2="1">
+                  <stop stop-color="#183849"/>
+                  <stop offset="1" stop-color="#0b1722"/>
+                </linearGradient>
+                <linearGradient id="airsight-line" x1="0" y1="0" x2="1" y2="0">
+                  <stop stop-color="#79e0ce"/>
+                  <stop offset="1" stop-color="#92d7ff"/>
+                </linearGradient>
+                <filter id="airsight-glow" x="-30%" y="-50%" width="160%" height="200%">
+                  <feGaussianBlur stdDeviation="4" result="blur"/>
+                  <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+                </filter>
+              </defs>
+              <rect width="560" height="360" fill="url(#airsight-bg)"/>
+              <circle cx="477" cy="76" r="142" fill="#72dcc4" opacity=".06"/>
+              <rect x="32" y="31" width="496" height="298" rx="12" fill="#101f2a" stroke="#55736f" stroke-opacity=".66"/>
+              <path d="M32 75H528" stroke="#55736f" stroke-opacity=".45"/>
+              <circle cx="52" cy="53" r="4" fill="#f1a18f"/>
+              <circle cx="67" cy="53" r="4" fill="#e8cb7c"/>
+              <circle cx="82" cy="53" r="4" fill="#77d9b8"/>
+              <text x="105" y="57" fill="#d5e8e1" font-size="10" font-family="Arial, sans-serif" font-weight="700" letter-spacing="1.2">AIRSIGHT / AIR QUALITY</text>
+              <rect x="393" y="42" width="112" height="20" rx="10" fill="#282d24" stroke="#65734a"/>
+              <circle cx="407" cy="52" r="3" fill="#d7cc76"/>
+              <text x="417" y="55" fill="#ded79c" font-size="7" font-family="Arial, sans-serif" letter-spacing=".7">SAMPLE DATA</text>
+              <text x="53" y="102" fill="#eef5ef" font-size="15" font-family="Arial, sans-serif" font-weight="700">Air quality overview</text>
+              <text x="53" y="118" fill="#89a49b" font-size="8" font-family="Arial, sans-serif">FILTER OBSERVATIONS BY CITY, DATE &amp; POLLUTANT</text>
+              <rect x="53" y="133" width="119" height="25" rx="5" fill="#172b33" stroke="#395651"/>
+              <text x="64" y="149" fill="#bdd0c9" font-size="8" font-family="Arial, sans-serif">CITY  /  SAMPLE</text>
+              <rect x="180" y="133" width="105" height="25" rx="5" fill="#172b33" stroke="#395651"/>
+              <text x="191" y="149" fill="#bdd0c9" font-size="8" font-family="Arial, sans-serif">DATE WINDOW</text>
+              <rect x="293" y="133" width="108" height="25" rx="5" fill="#172b33" stroke="#395651"/>
+              <text x="304" y="149" fill="#bdd0c9" font-size="8" font-family="Arial, sans-serif">POLLUTANT</text>
+              <rect x="53" y="172" width="138" height="51" rx="7" fill="#142933" stroke="#365550"/>
+              <text x="66" y="190" fill="#8ca8a1" font-size="8" font-family="Arial, sans-serif" letter-spacing=".8">PM2.5 / SAMPLE</text>
+              <text x="66" y="211" fill="#a5efce" font-size="17" font-family="Arial, sans-serif" font-weight="700">-- µg/m³</text>
+              <rect x="201" y="172" width="138" height="51" rx="7" fill="#142933" stroke="#365550"/>
+              <text x="214" y="190" fill="#8ca8a1" font-size="8" font-family="Arial, sans-serif" letter-spacing=".8">PM10 / SAMPLE</text>
+              <text x="214" y="211" fill="#a5efce" font-size="17" font-family="Arial, sans-serif" font-weight="700">-- µg/m³</text>
+              <rect x="349" y="172" width="156" height="51" rx="7" fill="#142933" stroke="#365550"/>
+              <text x="362" y="190" fill="#8ca8a1" font-size="8" font-family="Arial, sans-serif" letter-spacing=".8">BASELINE FORECAST</text>
+              <text x="362" y="211" fill="#a5efce" font-size="14" font-family="Arial, sans-serif" font-weight="700">MOVING AVG.</text>
+              <rect x="53" y="237" width="452" height="70" rx="7" fill="#0c1922" stroke="#2b4546"/>
+              <path d="M68 254H490M68 271H490M68 288H490" stroke="#afc7c1" stroke-opacity=".1"/>
+              <path d="M76 285L126 278L176 282L226 264L276 271L326 256L376 267L426 248L482 258" fill="none" stroke="url(#airsight-line)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" filter="url(#airsight-glow)"/>
+              <path d="M426 248L482 258V289H426Z" fill="#7edcc9" opacity=".08"/>
+              <text x="68" y="321" fill="#8ba69e" font-size="7" font-family="Arial, sans-serif" letter-spacing=".7">OBSERVATIONS + 1-DAY BASELINE · ILLUSTRATIVE UI</text>
+            </svg>
+            <img class="project-screenshot" src="assets/projects/airsight-dashboard.png" alt="Screenshot of the AirSight dashboard interface, which displays generated sample data" loading="lazy" decoding="async">
+            <span class="art-label">LIVE UI · GENERATED SAMPLE DATA / 03</span>
+          </div>
+          <div class="project-info">
+            <div>
+              <span class="project-type">ENVIRONMENTAL DATA · INTERACTIVE DASHBOARD</span>
+              <h3><a href="https://national-air-quality-intelligence.vercel.app" target="_blank" rel="noopener noreferrer">AirSight<br>Air Quality Intelligence <span>↗</span></a></h3>
+            </div>
+            <p>An interactive dashboard MVP for exploring air-quality records and trends with a transparent moving-average baseline.</p>
+            <div class="project-highlights" aria-label="Dashboard features">
+              <span><strong>3</strong><small>DATA FILTERS</small></span>
+              <span><strong>CSV</strong><small>SELECTED-DATA EXPORT</small></span>
+              <span><strong>1 DAY</strong><small>BASELINE FORECAST</small></span>
+            </div>
+            <p class="project-highlight-note">Generated sample data · illustrative only, not live CPCB readings</p>
+            <details class="project-details">
+              <summary>EXPLORE THE CASE STUDY <span>+</span></summary>
+              <div class="project-case-grid">
+                <section>
+                  <h4>THE GOAL</h4>
+                  <p>Make air-quality observations easier to explore by bringing location, date, and pollutant filters together with readable charts, summary metrics, and a recent-observations table.</p>
+                </section>
+                <section>
+                  <h4>THE DASHBOARD</h4>
+                  <p>Built an interactive frontend with a daily time-series chart, pollutant-mix visualization, selected-sample CSV export, and a one-day moving-average baseline forecast.</p>
+                </section>
+                <section>
+                  <h4>STACK &amp; SCOPE</h4>
+                  <p>HTML, CSS, JavaScript, and Chart.js. The current repository describes this release as a frontend MVP; a Python ingestion API, database, and evaluated forecasting pipeline are future engineering steps.</p>
+                </section>
+                <p class="project-caveat"><strong>Data integrity:</strong> The repository README says the current version uses generated sample data—not live CPCB observations, a PostgreSQL connection, or a trained ML model. Treat displayed readings and forecasts as illustrative, not measured air quality or health advice.</p>
+              </div>
+            </details>
+            <div class="project-actions">
+              <a href="https://national-air-quality-intelligence.vercel.app" target="_blank" rel="noopener noreferrer">OPEN LIVE APP <span>↗</span></a>
+              <a href="https://github.com/munvakhan25/AirSight-Air-Quality-Intelligence-Dashboard" target="_blank" rel="noopener noreferrer">SOURCE ON GITHUB <span>↗</span></a>
+            </div>
+            <div class="project-footer">
+              <span class="project-tags">HTML · CSS · JavaScript · Chart.js</span>
+              <span class="project-number">03</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-art noor-art">
+            <svg class="project-illustration" viewBox="0 0 560 360" role="img" aria-label="Noor-ul-Quran web app preview with an emerald Quran study welcome screen, reader and tafsir entry points, and research modules">
+              <defs>
+                <linearGradient id="noor-bg" x1="0" y1="0" x2="1" y2="1">
+                  <stop stop-color="#f8f8f2"/>
+                  <stop offset="1" stop-color="#e4ede5"/>
+                </linearGradient>
+                <linearGradient id="noor-emerald" x1="0" y1="0" x2="1" y2="1">
+                  <stop stop-color="#075340"/>
+                  <stop offset="1" stop-color="#087b5c"/>
+                </linearGradient>
+                <linearGradient id="noor-gold" x1="0" y1="0" x2="1" y2="0">
+                  <stop stop-color="#f4b52e"/>
+                  <stop offset="1" stop-color="#f5d274"/>
+                </linearGradient>
+              </defs>
+              <rect width="560" height="360" fill="url(#noor-bg)"/>
+              <rect x="28" y="24" width="504" height="312" rx="13" fill="#fbfcf8" stroke="#d7e4dc"/>
+              <path d="M28 66H532" stroke="#e1e9e3"/>
+              <rect x="45" y="38" width="18" height="14" rx="3" fill="#0c7358"/>
+              <path d="M49 42h10M49 46h10M49 50h6" stroke="#f8df98" stroke-width="1.5" stroke-linecap="round"/>
+              <text x="71" y="50" fill="#263e35" font-size="9" font-family="Arial, sans-serif" font-weight="700">Noor-ul-Quran</text>
+              <rect x="369" y="36" width="91" height="17" rx="8.5" fill="#eef3ef"/>
+              <circle cx="382" cy="44.5" r="3" fill="none" stroke="#628174" stroke-width="1.2"/>
+              <path d="M384 47l3 3" stroke="#628174" stroke-width="1.2" stroke-linecap="round"/>
+              <path d="M473 42h12M473 47h12" stroke="#739083" stroke-width="1.4" stroke-linecap="round"/>
+              <rect x="496" y="36" width="20" height="17" rx="8.5" fill="#eaf1ec"/>
+              <circle cx="506" cy="44.5" r="3" fill="none" stroke="#497b66" stroke-width="1"/>
+              <rect x="44" y="82" width="472" height="150" rx="12" fill="url(#noor-emerald)"/>
+              <circle cx="455" cy="105" r="75" fill="none" stroke="#f3ce75" stroke-opacity=".14"/>
+              <circle cx="455" cy="105" r="56" fill="none" stroke="#f3ce75" stroke-opacity=".12"/>
+              <path d="M434 103h42M440 111h30M447 119h16" stroke="#f3ce75" stroke-opacity=".55" stroke-width="1.4" stroke-linecap="round"/>
+              <text x="67" y="110" fill="#f3d16f" font-size="8" font-family="Arial, sans-serif" letter-spacing="2">A QURAN STUDY &amp; RESEARCH APP</text>
+              <text x="67" y="145" fill="#fffdf5" font-size="25" font-family="Arial, sans-serif" font-weight="700">Noor-ul-Quran</text>
+              <text x="67" y="165" fill="#dbeee4" font-size="9" font-family="Arial, sans-serif">Explore scripture, scholarly tafsir, Arabic linguistics,</text>
+              <text x="67" y="178" fill="#dbeee4" font-size="9" font-family="Arial, sans-serif">and source-grounded research in one place.</text>
+              <rect x="67" y="194" width="109" height="24" rx="12" fill="url(#noor-gold)"/>
+              <path d="M79 201h10v11H79zM81 204h6M81 207h6" fill="none" stroke="#3d4928" stroke-width="1"/>
+              <text x="95" y="209" fill="#253b2d" font-size="8" font-family="Arial, sans-serif" font-weight="700">OPEN READER</text>
+              <rect x="184" y="194" width="96" height="24" rx="12" fill="#ffffff" fill-opacity=".08" stroke="#cae6d5" stroke-opacity=".45"/>
+              <path d="M197 201h10v11h-10zM199 204h6M199 207h6" fill="none" stroke="#e8d07d" stroke-width="1"/>
+              <text x="213" y="209" fill="#f4f4e7" font-size="8" font-family="Arial, sans-serif" font-weight="600">TAFSIR LIBRARY</text>
+              <text x="46" y="254" fill="#38584a" font-size="8" font-family="Arial, sans-serif" font-weight="700" letter-spacing="1.2">EXPLORE THE ECOSYSTEM</text>
+              <rect x="44" y="264" width="148" height="54" rx="8" fill="#fff" stroke="#dbe6dd"/>
+              <circle cx="65" cy="284" r="10" fill="#e9f2ea"/>
+              <path d="M61 279h8v11h-8zM63 282h4M63 285h4" fill="none" stroke="#287657" stroke-width="1"/>
+              <text x="82" y="284" fill="#243f34" font-size="9" font-family="Arial, sans-serif" font-weight="700">Quran Reader</text>
+              <text x="82" y="298" fill="#819187" font-size="7" font-family="Arial, sans-serif">Verified Uthmani text</text>
+              <rect x="206" y="264" width="148" height="54" rx="8" fill="#fff" stroke="#dbe6dd"/>
+              <circle cx="227" cy="284" r="10" fill="#f7f0dc"/>
+              <path d="M223 279h8v11h-8zM225 282h4M225 285h4" fill="none" stroke="#a27b22" stroke-width="1"/>
+              <text x="244" y="284" fill="#243f34" font-size="9" font-family="Arial, sans-serif" font-weight="700">Tafsir Library</text>
+              <text x="244" y="298" fill="#819187" font-size="7" font-family="Arial, sans-serif">Classical scholarship</text>
+              <rect x="368" y="264" width="148" height="54" rx="8" fill="#fff" stroke="#dbe6dd"/>
+              <circle cx="389" cy="284" r="10" fill="#e9f2ea"/>
+              <circle cx="386" cy="281" r="2" fill="#27805e"/>
+              <circle cx="392" cy="281" r="2" fill="#27805e"/>
+              <circle cx="389" cy="287" r="2" fill="#27805e"/>
+              <path d="M388 282l-1 3M390 282l1 3" stroke="#27805e" stroke-width="1"/>
+              <text x="406" y="284" fill="#243f34" font-size="9" font-family="Arial, sans-serif" font-weight="700">Research Lab</text>
+              <text x="406" y="298" fill="#819187" font-size="7" font-family="Arial, sans-serif">Arabic roots &amp; themes</text>
+            </svg>
+            <img class="project-screenshot" src="assets/projects/noor-ul-quran.png" alt="Screenshot of the Noor-ul-Quran study app homepage" loading="lazy" decoding="async">
+            <span class="art-label">LIVE APP / 04</span>
+          </div>
+          <div class="project-info">
+            <div>
+              <span class="project-type">MULTILINGUAL QURAN STUDY &amp; RESEARCH</span>
+              <h3><a href="https://noor-ul-quran-n8al.onrender.com/#home" target="_blank" rel="noopener noreferrer">Noor-ul-Quran <span>↗</span></a></h3>
+            </div>
+            <p>A Quran study workspace combining a verified Uthmani-script reader, classical tafsir, Arabic-root research, and source-grounded AI tools.</p>
+            <div class="project-highlights" aria-label="Study app scope">
+              <span><strong>14</strong><small>STUDY MODULES</small></span>
+              <span><strong>114</strong><small>SURAHS</small></span>
+              <span><strong>3</strong><small>TAFSIR SOURCES</small></span>
+            </div>
+            <details class="project-details">
+              <summary>EXPLORE THE CASE STUDY <span>+</span></summary>
+              <div class="project-case-grid">
+                <section>
+                  <h4>THE PRODUCT</h4>
+                  <p>A 14-module Quran study and research ecosystem. The reader includes 114 Surahs, 30 Juz, translations, audio, bookmarks, and word-level Arabic analysis; the tafsir library compares Ibn Kathir, Al-Jalalayn, and Maududi.</p>
+                </section>
+                <section>
+                  <h4>RESEARCH &amp; LEARNING</h4>
+                  <p>Arabic-root search and concordance, an interactive Quran knowledge graph, learning and memorisation tools, personal notes, and a multilingual, source-grounded AI research assistant.</p>
+                </section>
+                <section>
+                  <h4>TRUST BY DESIGN</h4>
+                  <p>Verified Uthmani scripture is kept separate from translations, scholarship, personal notes, and AI explanations. AI cannot generate or alter Quranic Arabic; research answers use source citations and defer religious rulings to qualified scholars.</p>
+                </section>
+                <section class="project-case-wide">
+                  <h4>TECH STACK</h4>
+                  <p>React 19, TypeScript, Vite, and Tailwind CSS on the frontend; Python, FastAPI, SQLAlchemy, and PostgreSQL with pgvector on the backend.</p>
+                </section>
+              </div>
+            </details>
+            <div class="project-actions">
+              <a href="https://noor-ul-quran-n8al.onrender.com/#home" target="_blank" rel="noopener noreferrer">OPEN LIVE APP <span>↗</span></a>
+              <a href="https://github.com/munvakhan25/noor_ul_quran" target="_blank" rel="noopener noreferrer">SOURCE ON GITHUB <span>↗</span></a>
+            </div>
+            <div class="project-footer">
+              <span class="project-tags">React · TypeScript · FastAPI · Tailwind CSS</span>
+              <span class="project-number">04</span>
+            </div>
+          </div>
+        </article>
+      </div>
+      <p class="disclosure">Explore the <a href="https://noor-ul-quran-n8al.onrender.com/#home" target="_blank" rel="noopener noreferrer">Noor-ul-Quran live app ↗</a> or browse its <a href="https://github.com/munvakhan25/noor_ul_quran" target="_blank" rel="noopener noreferrer">source code on GitHub ↗</a>.</p>
+    </section>
+
+    <section class="section capability-section" id="capabilities">
+      <div class="section-kicker">03 / CAPABILITIES</div>
+      <div class="section-heading">
+        <h2>Tools of the trade<span class="blue-dot">.</span></h2>
+        <span class="section-note">A growing technical<br>toolkit.</span>
+      </div>
+      <div class="capability-grid">
+        <div class="capability-main">
+          <span class="micro-label">01 — PROGRAMMING &amp; DATA</span>
+          <div class="skill-list">
+            <span>Python</span>
+            <span>SQL</span>
+            <span>Microsoft Excel</span>
+            <span>Power BI</span>
+          </div>
+        </div>
+        <div class="capability-side">
+          <div>
+            <span class="micro-label">02 — WEB TECHNOLOGIES</span>
+            <p>HTML <b>/</b> CSS <b>/</b> JavaScript</p>
+          </div>
+          <div>
+            <span class="micro-label">03 — FOCUS AREAS</span>
+            <p>Data Science <b>/</b> Artificial Intelligence <b>/</b> Machine Learning</p>
+          </div>
+          <div>
+            <span class="micro-label">04 — HONORS &amp; COMMUNITY</span>
+            <p>AI Catalyst <b>/</b> Kaggle <b>/</b> LeetCode</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section experience-section" id="experience">
+      <div class="section-kicker">04 / EXPERIENCE &amp; LEARNING</div>
+      <div class="section-heading">
+        <h2>Where I’ve learned<span class="blue-dot">.</span></h2>
+        <span class="section-note">Internships &amp;<br>professional development.</span>
+      </div>
+      <div class="timeline">
+        <article>
+          <span class="timeline-mark"></span>
+          <div>
+            <span class="project-type">PROFESSIONAL CERTIFICATION</span>
+            <h3>Oracle</h3>
+            <p>Earned the OCI 2025 Certified Generative AI Professional credential, valid through August 2027.</p>
+          </div>
+          <span class="timeline-tag">GENERATIVE AI</span>
+        </article>
+        <article>
+          <span class="timeline-mark"></span>
+          <div>
+            <span class="project-type">COURSE COMPLETION</span>
+            <h3>HP LIFE</h3>
+            <p>Completed the Data Science &amp; Analytics course in March 2025.</p>
+          </div>
+          <span class="timeline-tag">DATA SCIENCE</span>
+        </article>
+        <article>
+          <span class="timeline-mark"></span>
+          <div>
+            <span class="project-type">GENERATIVE AI COURSE</span>
+            <h3>AWS Training &amp; Certification</h3>
+            <p>Completed Introduction to Generative AI: Art of the Possible in August 2025.</p>
+          </div>
+          <span class="timeline-tag">GENERATIVE AI</span>
+        </article>
+        <article>
+          <span class="timeline-mark"></span>
+          <div>
+            <span class="project-type">PYTHON DEVELOPMENT INTERNSHIP</span>
+            <h3><a href="https://github.com/munvakhan25/CODSOFT" target="_blank" rel="noopener noreferrer">CODSOFT <span class="timeline-link-arrow">↗</span></a></h3>
+            <p>Completed Python task work including a To-Do List, Calculator, Password Generator and Contact Book.</p>
+          </div>
+          <span class="timeline-tag">PYTHON</span>
+        </article>
+        <article>
+          <span class="timeline-mark"></span>
+          <div>
+            <span class="project-type">DATA ANALYTICS INTERNSHIP</span>
+            <h3><a href="https://github.com/munvakhan25/CodeAlpha_Data-Visualization" target="_blank" rel="noopener noreferrer">CodeAlpha <span class="timeline-link-arrow">↗</span></a></h3>
+            <p>Completed data analytics internship activities and shared visualization project work and proofs on GitHub.</p>
+          </div>
+          <span class="timeline-tag">ANALYTICS</span>
+        </article>
+        <article>
+          <span class="timeline-mark"></span>
+          <div>
+            <span class="project-type">DATA SCIENCE INTERNSHIP</span>
+            <h3>Cognifyz</h3>
+            <p>Participated in data science internship activities and documented project work.</p>
+          </div>
+          <span class="timeline-tag">DATA SCIENCE</span>
+        </article>
+        <article>
+          <span class="timeline-mark"></span>
+          <div>
+            <span class="project-type">ONLINE COURSE · 10 HOURS</span>
+            <h3>ISRO</h3>
+            <p>Completed AI/ML for Geospatial Analytics in September 2026.</p>
+          </div>
+          <span class="timeline-tag">AI / ML</span>
+        </article>
+      </div>
+
+      <div class="education-strip">
+        <div>
+          <span class="micro-label">EDUCATION</span>
+          <h3>B.Tech — Artificial Intelligence &amp; Data Science</h3>
+          <p>Geethanjali Institute of Science and Technology, Nellore</p>
+        </div>
+        <div class="education-stats">
+          <span><b>9.35</b><small>CGPA</small></span>
+          <span><b>2028</b><small>EXPECTED GRADUATION</small></span>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="section certifications-section" id="certifications">
+      <div class="section-kicker">05 / VERIFIED LEARNING</div>
+      <div class="section-heading">
+        <div>
+          <h2>Certificates &amp; recognition<span class="blue-dot">.</span></h2>
+          <p class="certifications-intro">A record of certifications, focused courses, and internship achievements.</p>
+        </div>
+        <span class="section-note">10 credentials<br>and achievements</span>
+      </div>
+      <div class="certification-grid">
+        <article class="certification-card">
+          <a class="certificate-preview" href="assets/certificates/oracle-generative-ai-professional.png" target="_blank" rel="noopener noreferrer" aria-label="View Oracle Generative AI Professional certificate">
+            <img src="assets/certificates/oracle-generative-ai-professional.png" alt="Oracle Certified Professional certificate for Oracle Cloud Infrastructure 2025 Certified Generative AI Professional" loading="lazy">
+            <span>VIEW CERTIFICATE <b>↗</b></span>
+          </a>
+          <div class="certification-info"><span>ORACLE · PROFESSIONAL CERTIFICATION</span><h3>OCI 2025 Certified Generative AI Professional</h3><p>Issued August 2025 · Valid through August 2027</p></div>
+        </article>
+        <article class="certification-card">
+          <a class="certificate-preview" href="assets/certificates/hp-life-data-science-analytics.png" target="_blank" rel="noopener noreferrer" aria-label="View HP LIFE Data Science and Analytics certificate">
+            <img src="assets/certificates/hp-life-data-science-analytics.png" alt="HP LIFE course completion certificate in Data Science and Analytics" loading="lazy">
+            <span>VIEW CERTIFICATE <b>↗</b></span>
+          </a>
+          <div class="certification-info"><span>HP LIFE · COURSE COMPLETION</span><h3>Data Science &amp; Analytics</h3><p>Completed March 2025</p></div>
+        </article>
+        <article class="certification-card">
+          <a class="certificate-preview" href="assets/certificates/aws-generative-ai-introduction.png" target="_blank" rel="noopener noreferrer" aria-label="View AWS Generative AI course certificate">
+            <img src="assets/certificates/aws-generative-ai-introduction.png" alt="AWS Training and Certification: Introduction to Generative AI - Art of the Possible" loading="lazy">
+            <span>VIEW CERTIFICATE <b>↗</b></span>
+          </a>
+          <div class="certification-info"><span>AWS TRAINING &amp; CERTIFICATION</span><h3>Introduction to Generative AI</h3><p>Art of the Possible · August 2025</p></div>
+        </article>
+        <article class="certification-card">
+          <a class="certificate-preview" href="assets/certificates/codsoft-python-internship.png" target="_blank" rel="noopener noreferrer" aria-label="View CodSoft Python Programming internship certificate">
+            <img src="assets/certificates/codsoft-python-internship.png" alt="CodSoft certificate of completion for the Python Programming virtual internship" loading="lazy">
+            <span>VIEW CERTIFICATE <b>↗</b></span>
+          </a>
+          <div class="certification-info"><span>CODSOFT · VIRTUAL INTERNSHIP</span><h3>Python Programming</h3><p>Four-week internship · November–December 2025</p></div>
+        </article>
+        <article class="certification-card">
+          <a class="certificate-preview" href="assets/certificates/codealpha-data-analytics-internship.png" target="_blank" rel="noopener noreferrer" aria-label="View CodeAlpha Data Analytics internship certificate">
+            <img src="assets/certificates/codealpha-data-analytics-internship.png" alt="CodeAlpha certificate of completion for the Data Analytics virtual internship" loading="lazy">
+            <span>VIEW CERTIFICATE <b>↗</b></span>
+          </a>
+          <div class="certification-info"><span>CODEALPHA · VIRTUAL INTERNSHIP</span><h3>Data Analytics Internship</h3><p>December 2025–January 2026</p></div>
+        </article>
+        <article class="certification-card">
+          <a class="certificate-preview" href="assets/certificates/cognifyz-data-science-internship.png" target="_blank" rel="noopener noreferrer" aria-label="View Cognifyz Data Science internship certificate">
+            <img src="assets/certificates/cognifyz-data-science-internship.png" alt="Cognifyz Technologies Internship Completion Certificate for Data Science" loading="lazy">
+            <span>VIEW CERTIFICATE <b>↗</b></span>
+          </a>
+          <div class="certification-info"><span>COGNIFYZ TECHNOLOGIES · INTERNSHIP</span><h3>Data Science Internship</h3><p>December 2025–January 2026</p></div>
+        </article>
+        <article class="certification-card">
+          <a class="certificate-preview" href="assets/certificates/isro-geospatial-ai-ml.png" target="_blank" rel="noopener noreferrer" aria-label="View ISRO AI and machine learning for geospatial analytics certificate">
+            <img src="assets/certificates/isro-geospatial-ai-ml.png" alt="ISRO online course certificate of participation in AI/ML for Geospatial Analytics" loading="lazy">
+            <span>VIEW CERTIFICATE <b>↗</b></span>
+          </a>
+          <div class="certification-info"><span>ISRO · ONLINE COURSE</span><h3>AI/ML for Geospatial Analytics</h3><p>10-hour course · September 2026</p></div>
+        </article>
+        <article class="certification-card">
+          <a class="certificate-preview" href="assets/certificates/oneroadmap-data-analyst.png" target="_blank" rel="noopener noreferrer" aria-label="View OneRoadmap Data Analyst certificate">
+            <img src="assets/certificates/oneroadmap-data-analyst.png" alt="OneRoadmap Certificate of Achievement for passing the Data Analyst Skill Certification Test" loading="lazy">
+            <span>VIEW CERTIFICATE <b>↗</b></span>
+          </a>
+          <div class="certification-info"><span>ONEROADMAP · SKILL CERTIFICATION</span><h3>Data Analyst</h3><p>Skill certification test · November 2025</p></div>
+        </article>
+        <article class="certification-card">
+          <a class="certificate-preview" href="assets/certificates/wadhwani-jobready.png" target="_blank" rel="noopener noreferrer" aria-label="View Wadhwani Foundation JobReady certificate">
+            <img src="assets/certificates/wadhwani-jobready.png" alt="Wadhwani Foundation certificate of completion for Employability Skills - JobReady" loading="lazy">
+            <span>VIEW CERTIFICATE <b>↗</b></span>
+          </a>
+          <div class="certification-info"><span>WADHWANI FOUNDATION · 113 HOURS</span><h3>Employability Skills — JobReady</h3><p>Completed September 2025</p></div>
+        </article>
+        <article class="certification-card">
+          <a class="certificate-preview" href="assets/certificates/codealpha-data-analytics-recommendation.png" target="_blank" rel="noopener noreferrer" aria-label="View CodeAlpha letter of recommendation">
+            <img src="assets/certificates/codealpha-data-analytics-recommendation.png" alt="CodeAlpha letter of recommendation for the Data Analytics virtual internship" loading="lazy">
+            <span>VIEW LETTER <b>↗</b></span>
+          </a>
+          <div class="certification-info"><span>CODEALPHA · RECOMMENDATION</span><h3>Letter of Recommendation</h3><p>Recognition for Data Analytics internship</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="section-kicker">06 / CONNECTION</div>
+      <p class="contact-overline">HAVE A PROJECT, IDEA OR OPPORTUNITY?</p>
+      <h2>Let’s make<br>something <em>matter.</em></h2>
+      <a class="email-link" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=munvakhan25%40gmail.com" target="_blank" rel="noopener noreferrer">munvakhan25@gmail.com <span>↗</span></a>
+      <div class="contact-links">
+        <a href="https://www.linkedin.com/in/munvakhan/" target="_blank" rel="noopener noreferrer">LINKEDIN ↗</a>
+        <a href="https://github.com/munvakhan25" target="_blank" rel="noopener noreferrer">GITHUB ↗</a>
+        <button type="button" data-open-resume>VIEW RESUME ↗</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand" href="#home">PMK<span>.</span></a>
+    <span>DESIGNED &amp; BUILT WITH INTENTION</span>
+    <span>© <span id="year">2026</span> PATHAN MUNVA KHAN</span>
+  </footer>
+
+  <div class="resume-modal" id="resumeModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="resumeTitle">
+    <div class="resume-backdrop" data-close-resume></div>
+    <div class="resume-window">
+      <div class="resume-toolbar">
+        <span>PROFESSIONAL DOSSIER <b>/ CV-001</b></span>
+        <div>
+          <button type="button" class="resume-print-btn" data-print-resume>PRINT / SAVE PDF ↓</button>
+          <button type="button" class="resume-close-btn" data-close-resume aria-label="Close resume">×</button>
+        </div>
+      </div>
+      <div class="resume-content">
+        <div class="resume-header">
+          <div>
+            <span class="resume-label">DATA SCIENCE &amp; AI</span>
+            <h2 id="resumeTitle">Pathan Munva Khan</h2>
+            <p>AI &amp; Data Science Undergraduate · Data Analyst</p>
+          </div>
+          <div class="resume-contact">
+            Nellore, Andhra Pradesh, India<br>
+            7207096793<br>
+            <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=munvakhan25%40gmail.com" target="_blank" rel="noopener noreferrer">munvakhan25@gmail.com</a><br>
+            <a href="https://www.linkedin.com/in/munvakhan/" target="_blank" rel="noopener noreferrer">LinkedIn</a> · 
+            <a href="https://github.com/munvakhan25" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
+        </div>
+        <div class="resume-rule"></div>
+        <div class="resume-columns">
+          <div>
+            <h3>PROFILE</h3>
+            <p>B.Tech student in Artificial Intelligence and Data Science with a 9.35/10 CGPA and hands-on exposure to Python development, data analytics, and machine learning. Builds practical projects with Python, SQL, and web technologies; interested in opportunities to contribute to data-focused teams while growing in AI and ML.</p>
+            <h3>EDUCATION</h3>
+            <b>B.Tech — Artificial Intelligence &amp; Data Science</b>
+            <p>Geethanjali Institute of Science and Technology, Nellore<br>Expected graduation: 2028 · CGPA: 9.35</p>
+            <h3>SELECTED PROJECTS</h3>
+            <b><a href="https://noor-ul-quran-n8al.onrender.com/#home" target="_blank" rel="noopener noreferrer">Noor-ul-Quran — Live web app ↗</a> · <a href="https://github.com/munvakhan25/noor_ul_quran" target="_blank" rel="noopener noreferrer">Source ↗</a></b>
+            <p>Built a 14-module Quran study and research app featuring verified Uthmani text, comparative tafsir, Arabic-root research, and citation-grounded AI tools.</p>
+            <b><a href="https://smart-library-demand-predictor.onrender.com" target="_blank" rel="noopener noreferrer">Smart Library Book Demand Predictor — Live app ↗</a> · <a href="https://github.com/munvakhan25/smart-library-demand-predictor" target="_blank" rel="noopener noreferrer">Source ↗</a></b>
+            <p>Benchmarked Random Forest against two classifiers: 94.20% test accuracy on 2,000 held-out rows from a 10,000-record synthetic dataset; Python, Pandas, and Scikit-Learn.</p>
+            <b><a href="https://national-air-quality-intelligence.vercel.app" target="_blank" rel="noopener noreferrer">AirSight — Live dashboard ↗</a> · <a href="https://github.com/munvakhan25/AirSight-Air-Quality-Intelligence-Dashboard" target="_blank" rel="noopener noreferrer">Source ↗</a></b>
+            <p>Built an interactive air-quality dashboard MVP with pollutant charts, CSV export, and a moving-average baseline; repository documents generated sample data.</p>
+          </div>
+          <div>
+            <h3>TECHNICAL SKILLS</h3>
+            <p><b>Languages:</b> Python, SQL, TypeScript, JavaScript<br><b>Data &amp; ML:</b> Pandas, Scikit-Learn, Excel, Power BI<br><b>Web &amp; backend:</b> React, FastAPI, HTML, CSS<br><b>Focus:</b> Data Analytics, Machine Learning, Generative AI</p>
+            <h3>INTERNSHIPS</h3>
+            <b><a href="https://github.com/munvakhan25/CODSOFT" target="_blank" rel="noopener noreferrer">CodSoft — Python Programming ↗</a></b>
+            <p>Four-week virtual internship; built a to-do list, calculator, password generator, and contact book.</p>
+            <b><a href="https://github.com/munvakhan25/CodeAlpha_Data-Visualization" target="_blank" rel="noopener noreferrer">CodeAlpha — Data Analytics ↗</a></b>
+            <p>Completed analytics and data-visualisation projects; received a letter of recommendation.</p>
+            <b>Cognifyz — Data Science</b>
+            <p>Completed data-science internship activities and documented project work.</p>
+            <h3>CERTIFICATIONS</h3>
+            <p>Oracle OCI Generative AI Professional (valid through Aug 2027) · HP LIFE Data Science &amp; Analytics · AWS Introduction to Generative AI · ISRO AI/ML for Geospatial Analytics · OneRoadmap Data Analyst · Wadhwani JobReady (113 hours)</p>
+          </div>
+        </div>
+        <div class="resume-footnote">Nellore, Andhra Pradesh, India · Open to data analytics, AI, and software internship opportunities.</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
